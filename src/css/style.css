@@ -1,0 +1,36 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.logo{
+    position: absolute;
+    left: 1rem;
+    border-radius: 10px;
+    z-index: 111;
+}
+.nav{
+    background:rgb(3, 61, 104);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    height: 46px;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+    
+}
+.nav li{
+    list-style: none;
+    display: flex;
+    /* text-decoration: none; */
+    flex-direction: column;
+    width: 100px;
+    height: 2.4rem;
+    text-align: center;
+    justify-content: center;
+}
+.nav li:hover{
+    border-bottom: 2px solid rgb(221, 221, 236);
+    transition: ease-in-out;
+    /* border-bottom: 2px solid rgb(221, 221, 236); */
+    cursor: pointer;
+}
