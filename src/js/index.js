@@ -1,25 +1,23 @@
 
+ console.log("cc");
  function numberValidation(){
-     let number = document.querySelector(".num").value;
-     
-    //  let error = document.querySelector(".error").value;
-    if(number == ""){
+     let num = document.querySelector(".num").value;
+     if(num.length == 10 || num == ""){
         document.querySelector(".error").innerHTML = ` `;
-
-    }
-     else if(number != NaN){
-        document.querySelector(".error").innerHTML = `** Enter a correct contact number **`
-     } else if (number >= 0 && number <= 9){
-         return false;
      }
-     else{
-         return false;
-     }
+    // else if(num.length <10){
+    //     document.querySelector(".error").innerHTML = `**Please enter a correct number**`;
+    // }else if (num >= 'a' && num <= 'z'){
+    //     document.querySelector(".error").innerHTML = "****"
+    // }
 }
 
 function emailValidation() {
     let mail = document.querySelector(".mail").value;
-    if(mail == ""){
+    if(mail == null){
+        mail.style.border = "red";
+    }
+    else if(mail == ""){
         document.querySelector(".error").innerHTML = ` `;
 
     }
@@ -28,7 +26,7 @@ function emailValidation() {
     // }
     else if(mail.indexOf('@') <= 0){
         document.querySelector('.error').innerHTML = " **Please enter the correct email**";
-
+        mail.style.border = "red";
     }
     else{
         return false;
@@ -59,3 +57,16 @@ function submit() {
    let btn =  document.querySelector('.btn');
    console.log("Button clicked");
 }
+let eye = document.querySelector(".eye");
+let inputPass = document.querySelector(".pass");
+// console.log(eye);
+
+// Password show functionality
+eye.addEventListener('mousedown', function show() {
+    inputPass.type = "text";
+});
+// Password hide functionality
+eye.addEventListener('mouseup', ()=> {
+    inputPass.type = "password";
+        
+})
