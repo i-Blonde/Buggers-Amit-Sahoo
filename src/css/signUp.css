@@ -44,6 +44,13 @@
     color: rgb(3, 61, 104);
     cursor: pointer;
 }
+.circle {
+    padding: 10px;
+    margin-left: -46px;
+    color: red;
+    /* cursor: pointer; */
+    display: none;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
