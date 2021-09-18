@@ -27,10 +27,24 @@
     height: 2.4rem;
     text-align: center;
     justify-content: center;
-}
-.nav li:hover{
-    border-bottom: 2px solid rgb(221, 221, 236);
-    transition: ease-in-out;
-    /* border-bottom: 2px solid rgb(221, 221, 236); */
     cursor: pointer;
 }
+.nav  a{
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover{
+    color : white;
+}
+.nav li:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid rgb(221, 221, 236);
+    width: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.nav li:hover:after {
+    cursor: pointer;
+    width: 96%; }
