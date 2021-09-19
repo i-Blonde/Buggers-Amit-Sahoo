@@ -105,7 +105,7 @@ input[type=text]:hover{
 .right img{
     width: 100%;
 }
-.but{
+.butSignUp{
     /* padding: 13px; */
     padding: 15px 30px;
     cursor: pointer;
@@ -115,7 +115,7 @@ input[type=text]:hover{
     color: white;
     background: rgb(3, 61, 104);
 }
-.but:hover{
+.butSignUp:hover{
   background: rgb(6, 94, 161);
 }
 span{
