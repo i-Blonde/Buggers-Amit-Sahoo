@@ -83,10 +83,6 @@ function nameValidation() {
     }
 }
 
-function submit() {
-   let btn =  document.querySelector('.btn');
-   console.log("Button clicked");
-}
 let eye = document.querySelector(".eye");
 let inputPass = document.querySelector(".pass");
 // console.log(eye);

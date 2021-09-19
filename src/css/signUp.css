@@ -19,10 +19,17 @@
     align-items: center ;
     flex-direction: column;
 }
+input:focus{
+  border-color: #777;
+  outline: 0;
+}
 .input-icons i {
     position: absolute;
 }
   
+.form-control.success input {
+  border-color : #2ecc71;
+}
 .input-icons {
     width: 60%;
     margin-bottom: 10px;
@@ -72,13 +79,13 @@ input[type=number] {
     outline: none;
     border: solid 1.5px #D3D3D3;
 }
-input[type=text]:hover{
+/* input[type=text]:hover{
     box-shadow: 0 0 4pt 0.5pt #D3D3D3;
   }
   input[type=text]:focus {
     box-shadow: 0 0 5pt 2pt #D3D3D3;
     outline-width: 0px;
-  }
+  } */
 
  /* .left #name,#num,#mail,#pass{
     margin-top: 1rem; 
