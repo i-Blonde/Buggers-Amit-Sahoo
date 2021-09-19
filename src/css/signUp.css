@@ -118,6 +118,19 @@ input[type=text]:hover{
 .butSignUp:hover{
   background: rgb(6, 94, 161);
 }
+.butSignIn{
+    /* padding: 13px; */
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 10px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(3, 61, 104);
+}
+.butSignIn:hover{
+  background: rgb(6, 94, 161);
+}
 span{
     color: rgb(3, 61, 104);
 }

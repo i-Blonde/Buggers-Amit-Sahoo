@@ -36,6 +36,14 @@
 .nav a:hover{
     color : white;
 }
+/* sign in & sign up button  */
+p a{
+    text-decoration: none;
+    color: white;
+}
+p a:hover{
+    color : white;
+}
 .nav li:after {
     content: '';
     display: block;
