@@ -27,9 +27,49 @@ input:focus{
     position: absolute;
 }
   
-.form-control.success input {
+.form-control.success.input-field {
   border-color : #2ecc71;
+ 
+  /* color: black;  */
 }
+.form-control.error.input-field  {
+  border-color : #e74c3c;
+
+}
+
+/* .input-field.mail.success  {
+  border-color : #2ecc71;
+  color: black;
+}
+.input-field.mail.error  {
+  border-color : #e74c3c;
+  color: black;
+}
+.input-field.pass.success  {
+  border-color : #2ecc71;
+  color: black;
+}
+.input-field.pass.error  {
+  border-color : #e74c3c;
+  color: black;
+}
+.input-field.cnfpass.success  {
+  border-color : #2ecc71;
+  color: black;
+}
+.input-field.cnfpass.error  {
+  border-color : #e74c3c;
+  color: black;
+}
+.input-field.num.success  {
+  border-color : #2ecc71;
+  color: black;
+}
+.input-field.num.error  {
+  border-color : #e74c3c;
+  color: black;
+} */
+
 .input-icons {
     width: 60%;
     margin-bottom: 10px;

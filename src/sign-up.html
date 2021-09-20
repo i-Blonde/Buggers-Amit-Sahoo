@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/signUp.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="https://kit.fontawesome.com/a7a9d28cbc.js" crossorigin="anonymous"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
 </head>
 
 <body>
@@ -19,43 +20,52 @@
             <div class="input-icons">
                 <form action="">
                     <!-- Name field  -->
+                    <div class="form-control">
                     <i class="fas fa-user-circle icon"></i>
                     <!-- <label for=""><i class="fas fa-mobile"></i></label> -->
                     <input type="text" placeholder="Name" maxlength="30" class="input-field name"
                         onkeyup="return nameValidation()">
 
+</div>
                     <br>
+                    <div class="form-control">
                     <!-- Email Field  -->
                     <i class="fas fa-envelope-open icon"></i>
-                    <input type="email" required placeholder="E-mail" class="input-field mail" maxlength="40"
+                    <input type="email" required placeholder="E-mail" class="input-field email" maxlength="40"
                         onkeyup=" emailValidation()">
                     <!-- <i class="fas fa-exclamation-circle circle"></i> -->
-
+                </div>
                     <br>
+                    <div class="form-control">
                     <!-- Password Field -->
                     <i class="fas fa-unlock-alt icon"></i>
                     <input type="password" placeholder="Password" maxlength="25" class="input-field pass"
                         onkeyup="return passValidation()">
                     <i class="fas fa-eye eye"></i>
-
+                </div>
                     <br>
+                    <div class="form-control">
                     <!-- Confirm Password Field -->
                     <i class="fas fa-unlock-alt icon"></i>
                     <input type="text" placeholder="Confirm Password" maxlength="25" class="input-field cnfPass"
-                        onkeyup="return passValidation()">
+                        onkeyup="return cnfPassValidation()">
+                </div>
+                        <div class="form-control">
                     <!-- Mobile Number Field      -->
                     <i class="fas fa-mobile icon"></i>
-                    <input type="text" maxlength="10" minlength="10" placeholder="Contact Number" class="input-field"
-                        id="num" onkeyup="numValid()">
+                    <input type="text" maxlength="10" minlength="10" placeholder="Contact Number" class="input-field num"
+                         onkeyup="numberValidation()">
+                        </div>
                     <p class="error"> </p>
 
                     <br>
+
                     <input type="checkbox" name="" id="checkBox"> <label for=""> I read and agree to<span> Terms &
                             Conditions </span></label>
 
             </div>
             <!-- Sign-Up Button  -->
-            <button class="butSignUp" value="submit" type="submit" onclick="submission()">CREATE ACCOUNT</button>
+            <button class="butSignUp" value="submit" type="submit">CREATE ACCOUNT</button>
             </form>
             <br><br>
             <p>Already have an account? <a href="/src/sign-in.html"><span>Sign in </span></p></a>
@@ -70,7 +80,7 @@
             <h3>You can sign up here!!</h3>
         </div>
     </div>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/signUp.js"></script>
     <script src="/src/js/ajax.js"></script>
 </body>
 

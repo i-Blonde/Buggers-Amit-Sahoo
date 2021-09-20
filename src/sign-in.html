@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/signUp.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="https://kit.fontawesome.com/a7a9d28cbc.js" crossorigin="anonymous"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     <br>
                     <!-- Email Field  -->
                     <i class="fas fa-envelope-open icon"></i>
-                    <input type="text" placeholder="E-mail" class="input-field mail" maxlength="40"
+                    <input type="email" placeholder="E-mail" class="input-field mail" maxlength="40"
                         onkeyup=" emailValidation()">
                     <!-- <i class="fas fa-exclamation-circle circle"></i> -->
                     <br>
@@ -39,7 +40,7 @@
 
             </div>
             <!-- Sign-In Button  -->
-            <button class="butSignIn" type="submit" onclick="submit()">LOGIN</button>
+            <button class="butSignIn" value="submit" type="submit" onclick="submit()">LOGIN</button>
             </form>
             <br><br>
             <p>You are new here? <a href="/src/sign-up.html"><span>Sign up </span></a></p>
@@ -51,7 +52,7 @@
             <h3>You can sign in here!!</h3>
         </div>
     </div>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/signIn.js"></script>
     <script src="/src/js/ajax.js"></script>
 </body>
 
