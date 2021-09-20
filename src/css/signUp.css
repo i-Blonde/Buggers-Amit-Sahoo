@@ -27,13 +27,14 @@ input:focus{
     position: absolute;
 }
   
-.form-control.success.input-field {
+.input-field.success {
   border-color : #2ecc71;
  
-  /* color: black;  */
+  color: black; 
 }
-.form-control.error.input-field  {
+.input-field.error {
   border-color : #e74c3c;
+  color: black; 
 
 }
 
