@@ -9,6 +9,7 @@ eye.addEventListener("mousedown", function show() {
 // Password hide functionality
 eye.addEventListener("mouseup", () => {
   inputPass.type = "password";
+ 
 });
 
 // const fc = document.querySelectorAll(".form-control");
@@ -20,15 +21,17 @@ const cnfPass = document.querySelector(".cnfPass");
 const num = document.querySelector(".num");
 
 function setError(input) {
-    const fc = document.querySelector(".form-control");
+    const fc = document.querySelectorAll("form-control");
   input.className = "input-field error";
-  fc.classList = "form-control error"
+  fc.classList = "form-control error";
+  input.parentElement.className = "form-control error"
 }
 function setSuccess(input) {
-    const fc = document.querySelector(".form-control");
+    const fc = document.getElementsByClassName("form-control");
     console.log(fc);
     input.className = "input-field success";
     fc.classList = "form-control success"
+    input.parentElement.className = "form-control success"
 }
 // Name Validation
 const nameValidation = () => {
@@ -51,7 +54,7 @@ const emailValidation = () => {
     // console.log(emailVal);
   var dot = emailVal.indexOf(".");
   var atSym = emailVal.indexOf("@");
-if (atSym < 1 || dot <= atSym + 2 || dot === emailVal.length - 1  || emailVal == "" || emailVal.length < 5) {
+if (atSym < 1 || dot <= atSym + 2 || emailVal == "" || emailVal.length < 5) {
       console.log("done");
       setError(email);
     // console.log(fc);
@@ -110,10 +113,17 @@ const numValidation = () => {
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    nameValidation();
-    emailValidation();
-    passValidation();
-    cnfPassValidation();
-    numValidation();
+    const nameValidationDone = nameValidation();
+    const emailValidationDone = emailValidation();
+    const passValidationDone = passValidation();
+    const cnfPassValidationDone = cnfPassValidation();
+    const numValidationDone = numValidation();
+
+    if(nameValidationDone == true && emailValidationDone == true && passValidationDone == true && cnfPassValidationDone == true && numValidationDone == true && passValidationDone === cnfPassValidationDone){
+        swal("Good job!", "You have successfully Signed Up!", "success", {
+            button: "Aww yiss!",
+          });
+    }
+    
 
 })
